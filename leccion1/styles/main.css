@@ -1,0 +1,31 @@
+/*Es bueno ir en orden siempre*/
+/*shift tab, retrocede el tabulado wow*/
+
+/*****ORDEN SUGERIDO*****/
+/*Tarea hacer pagina en bootstrap con navegador y 5 secciones*/
+
+/*1. Estilos Base*/
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(103, 36, 36) !important;
+}
+
+/*HEADER*/
+img {
+    width: 40px;
+}
+
+
+
+/*2. Estilos por seccion*/
+    /*a. cabecera*/
+    /*b. contenido*/
+    /*c. pie*/
