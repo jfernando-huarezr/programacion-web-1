@@ -6,26 +6,117 @@
 
 /*1. Estilos Base*/
 
+
+/*2. Estilos por seccion*/
+    /*a. cabecera*/
+    /*b. contenido*/
+    /*c. pie*/
+
 *,
 ::before,
 ::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  --main-light-color: rgb(44, 116, 179);
+  --secondary-light-color: rgb(32, 82, 149);
+  --main-dark-color: rgb(10, 38, 71);
+  --secondary-dark-color: rgb(20, 66, 114);
+
+  --white-color: rgb(255,255,255);
+  --black-color: rgb(0,0,0);
 }
 
 body {
-    background-color: rgb(103, 36, 36) !important;
+    background-color: var(--main-light-color) !important;
 }
 
 /*HEADER*/
-img {
+
+#header {
+    font-size: 1.2rem;
+}
+
+#header img {
     width: 40px;
+}
+
+#header a:hover {
+    font-weight: bold;
+}
+
+.caption-color {
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+/*SLIDERS*/
+#sliders {
+    background-color: var(--main-dark-color);
+}
+
+/*ABOUT*/
+#about {
+    color: var(--white-color);
+    font-size: 1.1rem;
+}
+
+#about img {
+    width: 100%;
+}
+
+/*projects*/
+#projects {
+    background-color: var(--secondary-light-color);
+}
+
+#projects h1 {
+    color: var(--white-color);
+}
+
+/*CONTACTO*/
+
+#contact {
+    background-color: var(--main-dark-color);
+    color: var(--white-color);
+}
+
+.network {
+    font-size: 2rem;
 }
 
 
 
-/*2. Estilos por seccion*/
-    /*a. cabecera*/
-    /*b. contenido*/
-    /*c. pie*/
+/*FOOTER*/
+#footer {
+    color: var(--white-color);
+}
+
+#contact a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+/*GO TOP BUTTON*/
+#button-go-top {
+    width: 45px;
+    height: 45px;
+    background-color: var(--white-color);
+    color: var(--main-dark-color);
+    border: 1px solid var(--black-color);
+
+    /*posicionamiento de caja*/
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    line-height: 45px; /*para centrar verticalmente. Si le pongo la misma altura de la caja (en este caso 45px), lo centra*/
+    transition: all 0.3s ease-in-out;
+}
+
+#button-go-top:hover {  /*efectos para el boton para ir al top de la pagina*/
+    background-color: var(--main-light-color);
+    transform: translateY(-5px);
+    box-shadow: -3px 8px 15px 0px var(--black-color);
+
+}

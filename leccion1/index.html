@@ -6,10 +6,11 @@
     <title>Leccion 1</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
    
-        <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary px-5 sticky-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="./img/logo.svg" alt="logo">
@@ -17,8 +18,8 @@
 
 
               <ul class="navbar-nav">
-                <li class="navbar-text">
-                    Jose Fernando
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">J. Fernando Huarez</a>
                 </li>
               </ul>
 
@@ -29,17 +30,15 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#about">Acerca de</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Acerca de</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mis Proyectos</a>
+                    <a class="nav-link" href="#projects">Mis Proyectos</a>
                   </li>  
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contact">Contacto</a>
                   </li>                   
                 </ul>
 
@@ -48,50 +47,176 @@
           </nav>
    
 
-    <section id="about" class="container mt-5">
-
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section id="sliders">
+        <div class="container py-5">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="https://picsum.photos/1280/720" class="d-block w-100" alt="imagen 1">
+                  <div class="carousel-caption d-none d-md-block caption-color">
+                    <h5>Hola!</h5>
+                    <p>Soy José Fernando</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="https://picsum.photos/1280/720" class="d-block w-100" alt="imagen 2">
+                  <div class="carousel-caption d-none d-md-block caption-color" >
+                    <p>Estudiante de Desarrollo de Software en ISIL</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="https://picsum.photos/1280/720" class="d-block w-100" alt="imagen 3">
+                  <div class="carousel-caption d-none d-md-block caption-color">
+                    <p>Bienvenido a mi página!</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <img src="https://picsum.photos/1280/720" class="d-block w-100" alt="imagen 1">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Hola!</h5>
-                  <p>Soy José Fernando</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="https://picsum.photos/1280/720" class="d-block w-100" alt="imagen 2">
-                <div class="carousel-caption d-none d-md-block" >
-                  <p>Estudiante de Desarrollo de Software en ISIL</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="https://picsum.photos/1280/720" class="d-block w-100" alt="imagen 3">
-                <div class="carousel-caption d-none d-md-block">
-                  <p>Bienvenido a mi página!</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </div>
 
     </section>
 
-    <footer>
+    <section id="about">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="container">
+              <h1>Quien soy?</h1>
+              <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repudiandae asperiores minima officiis aliquam omnis pariatur recusandae nulla delectus adipisci dolor est nostrum, et consequuntur, dolorum vitae? Rem iure excepturi sint reiciendis corporis reprehenderit porro sunt expedita exercitationem quae. Reprehenderit repudiandae aspernatur optio amet repellendus provident commodi. Architecto, quod iste.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="rounded-3 img-fluid" src="./img/me.jpeg" alt="mi fotografia">
+          </div>
+        </div>
 
+          <div class="row flex-row-reverse mt-5 gy-3">
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+              <div class="container">
+                <h1>Tecnologias</h1>
+                <ul class="row mt-4">
+                  <div class="col">
+                    <li>HTML/CSS</li>
+                    <li>Javascript</li>
+                  </div>
+                  <div class="col">
+                    <li>Kotlin</li>
+                    <li>Swift</li>
+                    <li>SQL</li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <img class="rounded-3 img-fluid" src="./img/tecnologias.jpg" alt="lenguajes de programacion">
+            </div>
+            
+          </div>
+        
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container py-5">
+        <div class="row py-2">
+          <h1>Proyectos personales</h1>
+        </div>
+
+        <div class="row mt-4 gy-2">
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card" style="width: 100%;">
+              <img src="https://picsum.photos/1280/720" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card" style="width: 100%;">
+              <img src="https://picsum.photos/1280/720" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card" style="width: 100%;">
+              <img src="https://picsum.photos/1280/720" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Proyecto 3</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section id="contact">
+      <div class="container py-5">
+        <h1 class="text-center">Estas son mis redes sociales</h1>
+        <h2 class="text-center">Escríbeme para contactarme</h2>
+
+        <div class="row mt-5 gy-3 network">
+          <div class="col-12 col-md-3 d-flex justify-content-center">
+            <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/fernandohuarez/">
+              <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+              <span>Linkedin</span>
+          </a>
+          </div>
+          <div class="col-12 col-md-3 d-flex justify-content-center">
+            <a target="_blank" href="https://github.com/jfernando-huarezr">
+              <i class="fa-brands fa-github" style="color: #ffffff;"></i> <span>Github</span>
+            </a>
+          </div>
+          <div class="col-12 col-md-3 d-flex justify-content-center">
+            <a target="_blank" href="mailto:jose.huarezr@gmail.com"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> <span>Correo</span>
+            </a>
+          </div>
+          <div class="col-12 col-md-3 d-flex justify-content-center"">
+            <a target="_blank" href="https://wa.me/+51990013772">
+              <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i> <span>Whatsapp</span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+     <div class="container">
+        <div class="row py-5">
+          <div class="col">
+            © 2023 - All rights reserved
+          </div>
+        </div>
+     </div>
     </footer>
+
+    <a href="#" id="button-go-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a><!-- go top button -->
 
 
 
