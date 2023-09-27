@@ -46,8 +46,7 @@ img {
 #banner {
     height: 49.5rem;
     .container-fluid {
-        height: 100%;
-        
+        height: 100%; //se puede usar la clase h-100 en el html
         .row {
             height: 100%;
             .col-6 {
@@ -131,7 +130,6 @@ img {
                         right: -44rem;
                         width: 88.99338rem;
                         height: 82.8125rem;                        
-                        flex-shrink: 0;
                         border-radius: 88.99338rem;
                         background: #DDF3D8;
                         z-index: 1;
