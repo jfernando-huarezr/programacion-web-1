@@ -178,6 +178,11 @@ img {
 }
 
 /******** MAIN SECTION */
+main {
+  max-width: 1920px;
+  margin: auto;
+}
+
 /****CHEF SECTION */
 #chef {
   margin: 2.5rem 0;
