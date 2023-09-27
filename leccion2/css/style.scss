@@ -215,10 +215,12 @@ img {
 }
 
 /******** MAIN SECTION */
+/*maximo ancho de 1920px una pantalla full hd, se veia mal en pantallas muy grandes*/
 main {
     max-width: 1920px;
     margin: auto;
 }
+
 /****CHEF SECTION */
 
 #chef {
