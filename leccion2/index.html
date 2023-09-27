@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodz</title>    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css"> <!-- normalizar css -->
     <link rel="stylesheet" href="./css/style.css"> <!-- siempre poner tu regla al final, luego de los framework. que prevalezca -->    
 </head>
 <body>
@@ -47,7 +47,7 @@
         <section id="banner">
           <div class="container-fluid g-0">
             <div class="row">
-              <div class="col-6">
+              <div class="col g-0 section-banner">
                 <div class="text-banner d-flex flex-column align-items-start">
                   <div>
                     <h2>You've Got Questions. <br>
@@ -57,25 +57,39 @@
                        place. This text don’t have any meaning</p>
                   </div>
                   
-                  <div class="d-flex flex-row text-banner-links">
+                  <div class="d-flex flex-row text-banner-links w-100">
                     <button class="btn btn-success">ORDER NOW</button>
                     <a class="ms-3 d-flex align-items-center" href="">Explore Menu</a>
                   </div>
                 </div>
               </div>
 
-              <div class="col-6">
-                <div class="banner-img container-fluid">
-                  <img class="bowl" src="./img/bowl.png" alt="bowl">
-                  <img class="sugar" src="./img/sugar.png" alt="sugar">
-                  <div class="circle"></div>
-                </div>
-              </div>
             </div>
           </div>
-
         </section>
+
     </header><!-- header -->
+
+    <main>
+      <section id="chef" class="container-fluid g-0">
+
+        <h2>19 <span>Michelin</span> Stars Chef</h2>
+
+        <div class="chef-content d-flex">
+          <div class="chef-img">
+            <img src="./img/cook.png" alt="chef">
+          </div>
+          <div class="chef-text">
+            <div>
+              <h4>Alain Ducase - 19 Michelin Stars</h4>
+              <p>Considered by many to be one of the best chefs in the world, he’s built a business empire over the years with 36 restaurants spanning across the globe. He’s also one of only two chefs to hold 21 Michelin stars throughout his career and the first chef to own restaurants carrying three Michelin Stars in three cities.</p>       
+    
+              <p>In addition to being known for world-class French cuisine, Ducasse is the only chef on this list who has sent his food into space. In 2015, Ducasse sent meals to astronauts orbiting Earth aboard the International Space Station, an accomplishment that Ducasse said he viewed as conquering ‘ the final frontier (of cooking)’.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
       <!-- tarea, completar el bloque 1  -->
       <!-- https://www.figma.com/file/VP3e1H30005TPiLPfJvIZJ/Foodz?node-id=2271%3A5991&mode=dev -->
